@@ -13,8 +13,6 @@ The system transforms raw transactional data into meaningful insights using:
 
 The objective is to demonstrate how Business Intelligence and Data Science techniques can be integrated to build a **data-driven decision support system**.
 
----
-
 ## 🎯 Problem Statement
 
 Retail businesses generate massive volumes of transactional sales data across regions, product categories, customer segments, and time periods. However, many organizations struggle to convert raw data into actionable insights.
@@ -35,8 +33,6 @@ Additionally, forecasting is often based on historical trends and managerial int
 
 This project addresses these challenges by building a centralized BI system integrated with predictive analytics.
 
----
-
 ## 🎯 Objectives
 
 - Design a complete BI pipeline from raw data to dashboard
@@ -51,8 +47,6 @@ This project addresses these challenges by building a centralized BI system inte
 - Identify trends and seasonality
 - Implement ARIMA-based sales forecasting
 - Provide actionable business recommendations
-
----
 
 ## 📂 Dataset Description
 
@@ -95,8 +89,6 @@ This project addresses these challenges by building a centralized BI system inte
 - Quantity
 - Discount
 
----
-
 ## 🧹 Data Preprocessing
 
 ### ✔ Handling Missing Values
@@ -120,8 +112,6 @@ This project addresses these challenges by building a centralized BI system inte
 - Calculated Profit Margin (%)
 - Aggregated monthly sales for ARIMA forecasting
 
----
-
 ## 📊 BI Dashboard (Power BI)
 
 ### 🔑 KPIs Displayed
@@ -130,8 +120,6 @@ This project addresses these challenges by building a centralized BI system inte
 - 📦 Total Orders: 4K  
 - 📊 Profit Margin: 15.46%  
 - 🧾 Average Order Value: ₹62.31  
-
----
 
 ### 📈 Visualizations
 
@@ -157,15 +145,11 @@ This project addresses these challenges by building a centralized BI system inte
 5. **Year-wise Sales Trend**
    - Growth analysis (2014–2017)
 
----
-
 ### 🎛 Interactive Filters
 - Year
 - Region
 - Category
 - Customer Segment
-
----
 
 ## 🔮 Predictive Model
 
@@ -180,8 +164,6 @@ This project addresses these challenges by building a centralized BI system inte
 
 This enhances the system from descriptive analytics to predictive analytics.
 
----
-
 ## 📈 Key Insights
 
 - Certain regions contribute significantly higher revenue.
@@ -189,8 +171,6 @@ This enhances the system from descriptive analytics to predictive analytics.
 - Clear seasonal sales patterns are observed.
 - High revenue does not always imply high profitability.
 - Forecast indicates continued growth trend.
-
----
 
 ## 💡 Business Recommendations
 
@@ -200,6 +180,62 @@ This enhances the system from descriptive analytics to predictive analytics.
 - Diversify revenue sources beyond top-performing products
 - Institutionalize KPI monitoring using BI dashboards
 
----
-
 ## 🏗 Project Structure
+Sales_BI_Project/
+│
+├── superstore.csv # Raw dataset (Superstore sales data)
+│
+├── main.py # Python script for preprocessing & forecasting
+├── notebook.ipynb # Jupyter notebook (analysis + visualization)
+│
+├── report.docx # Final project report
+│
+├── outputs/ # Generated BI-ready files & visual outputs
+│ ├── kpis.csv # Computed KPIs
+│ ├── monthly_sales.csv # Aggregated monthly sales
+│ ├── sales_by_region.csv # Sales grouped by region
+│ ├── sales_by_category.csv # Sales grouped by category
+│ ├── top_products.csv # Top 10 products by sales
+│ ├── monthly_sales_trend.png # Historical sales trend chart
+│ ├── sales_forecast_next_3_months.csv # ARIMA forecast results
+│ └── sales_forecast.png # Forecast visualization
+│
+└── dashboard/
+└── sales_dashboard.pbix # Power BI dashboard file
+
+### Structure Explanation
+- **Dataset** → Contains raw transactional data.
+- **Python Scripts / Notebook** → Perform data cleaning, feature engineering, KPI computation, and ARIMA forecasting.
+- **Outputs Folder** → Stores processed datasets and visualizations used in the BI dashboard.
+- **Dashboard Folder** → Contains the Power BI dashboard file.
+- **Report** → Detailed documentation of methodology, insights, and recommendations.
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Statsmodels (ARIMA)
+- Power BI
+
+## 📌 Business Impact
+
+This project demonstrates how combining:
+
+- Data Cleaning  
+- KPI Analytics  
+- Interactive Dashboards  
+- Statistical Forecasting  
+
+can significantly enhance:
+
+- Strategic planning  
+- Inventory optimization  
+- Revenue forecasting  
+- Data-driven decision-making  
+
+## 👨‍💻 Author
+
+**Hemant Ghodke**  
+BSc IT | Business Intelligence & Data Analytics  
